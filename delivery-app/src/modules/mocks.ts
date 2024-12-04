@@ -1,6 +1,5 @@
 import {Delivery} from "../core/api/delivery/typing.ts";
 
-
 export const DeliveryListMock: Delivery[] = [
     {
         id: 1,
