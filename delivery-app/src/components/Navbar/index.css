@@ -1,0 +1,28 @@
+/* src/index.css */
+@import "../../style/variables.css";
+
+.headerLink {
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--green-color);
+}
+
+.bi.bi-telephone {
+    color: var(--green-color);
+    border: var(--green-color);
+}
+
+.header-container {
+    margin-left: 56px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+
+.custom-navbar{
+    height: 90px;
+}
+

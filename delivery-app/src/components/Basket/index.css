@@ -1,0 +1,14 @@
+/* src/index.css */
+@import "../../style/variables.css";
+
+.basket-count {
+    font-size: 20px;
+    padding: 3px 10px;
+    color: var(--title-color);
+    border: 1.5px solid var(--title-color);
+    border-radius: 20px;
+}
+.basket-container {
+    color: var(--green-color);
+    margin: 0px;
+}

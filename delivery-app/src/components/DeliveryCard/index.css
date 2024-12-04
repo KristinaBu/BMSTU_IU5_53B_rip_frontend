@@ -1,0 +1,58 @@
+/* src/index.css */
+@import "../../style/variables.css";
+
+.card {
+    flex-grow: 1;
+    background-color: var(--card-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 16px;
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.info-button {
+    padding: 10px 10px;
+    border: 1px solid var(--info-but-color);
+    border-radius: 14px;
+    font-size: 20px;
+    background-color: var(--card-color);
+    color: var(--info-but-color);
+    display: inline-block;
+    width: auto;
+}
+
+.info-button:hover {
+    background-color: var(--info-but-hover-color);
+}
+
+.info-button:active {
+    background-color: var(--info-nut-onclick-color);
+}
+
+
+.info {
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.title {
+    margin: 10px;
+    color: var(--title-color);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.price {
+    margin: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+

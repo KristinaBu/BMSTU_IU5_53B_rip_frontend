@@ -1,0 +1,13 @@
+@import "../../style/variables.css";
+
+.headerLink {
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--green-color);
+}
+
+.bi.bi-telephone {
+    color: var(--green-color);
+    border: var(--green-color);
+}
