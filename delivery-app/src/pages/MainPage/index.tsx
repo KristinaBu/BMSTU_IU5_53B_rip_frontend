@@ -1,6 +1,5 @@
 import React from "react";
 import { Navbar } from "../../components/Navbar";
-import {DeliveryCard} from "../../components/DeliveryCard";
 import {Link} from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import TelephoneIcon from "../../components/Navbar/TelephoneIcon.tsx";
@@ -10,6 +9,7 @@ export const MainPage: React.FC = () => {
     return (
         <div>
             <Container style={{textAlign: "center"}}>
+                <Navbar></Navbar>
                 <NavbarComp.Brand>
                     <TelephoneIcon />
                     <Link to="/" className="headerLink">

@@ -13,16 +13,24 @@
     border: var(--green-color);
 }
 
-.header-container {
-    margin-left: 56px;
-    display: flex;
-    flex-direction: row;
-    margin-top: 32px;
-    margin-bottom: 32px;
+.collapse-navbar{
+    display: block;
 }
 
-
-.custom-navbar{
-    height: 90px;
+/* src/components/Navbar/index.css */
+.navbar-toggler {
+    display: block !important;
+    color: var(--green-color) !important;
+    border: 1px solid var(--green-color) !important;
 }
 
+/* ... ваш код ... */
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        display: none;
+    }
+    .navbar-collapse.show {
+        display: block;
+    }
+}
