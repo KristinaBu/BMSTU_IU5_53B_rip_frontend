@@ -2,7 +2,8 @@ import {FC} from "react";
 import "./index.css";
 import {Navbar} from "../../components/Navbar";
 import {Container, Button} from "react-bootstrap"
-import {DeliveryCardProps, useDeliveryPage} from "./DeliveryPage";
+import {useDeliveryPage} from "./DeliveryPage";
+import {DeliveryCardProps} from "./typing.tsx";
 import {Breadcrumbs} from "../../components/BreadCrumbs";
 import {DeliveryCard} from "../../components/DeliveryCard";
 import Basket from "../../components/Basket";
@@ -61,9 +62,8 @@ export const DeliveryPage: FC = () => {
                                 return (
 
                                     <div className="col" key={delivery.id}>
-                                        <DeliveryCard {...props} />
+                                        <DeliveryCard  {...props} />
                                     </div>
-
 
                                 );
                             })}

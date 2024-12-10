@@ -3,4 +3,5 @@ export interface DeliveryCardProps {
     image: string;
     title: string;
     price: number;
+    description?: string;
 }

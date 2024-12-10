@@ -4,7 +4,6 @@ export interface Delivery {
     title: string;
     price: number;
     description: string;
-    isDelete: boolean;
 }
 
 export interface DeliveryListResponse {

@@ -3,7 +3,7 @@ import {MainRouter} from "./Routes";
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/BMSTU_IU5_53B_rip_frontend">
             <MainRouter />
         </BrowserRouter>
     );
