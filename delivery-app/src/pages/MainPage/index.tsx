@@ -2,20 +2,13 @@ import React from "react";
 import { Navbar } from "../../components/Navbar";
 import {Link} from "react-router-dom";
 import Container from "react-bootstrap/Container";
-import TelephoneIcon from "../../components/Navbar/TelephoneIcon.tsx";
-import NavbarComp from "react-bootstrap/Navbar";
 
 export const MainPage: React.FC = () => {
     return (
         <div>
             <Container style={{textAlign: "center"}}>
                 <Navbar></Navbar>
-                <NavbarComp.Brand>
-                    <TelephoneIcon />
-                    <Link to="/" className="headerLink">
-                        DeliVeryWell
-                    </Link>
-                </NavbarComp.Brand>
+
                 <h1 style={{textAlign: "center"}}
                 >Лучший сервис доставки, который вы когда-либо видели. Радость ближе, чем вы думаете! Буквально на расстоянии звонка!</h1>
                 <Link
