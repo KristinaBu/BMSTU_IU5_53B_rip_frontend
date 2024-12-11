@@ -16,6 +16,8 @@ export const DeliveryPage: FC = () => {
         handleSearchDeliveryClick,
         handlePriceStartChange,
         handlePriceEndChange,
+        priceStart,
+        priceEnd,
     } = useDeliveryPage();
 
     return (
@@ -34,6 +36,7 @@ export const DeliveryPage: FC = () => {
                             placeholder="Цена от ..."
                             aria-label="Цена от ..."
                             type="text"
+                            value={priceStart}
                         />
                         <input
                             className="search"
@@ -41,6 +44,7 @@ export const DeliveryPage: FC = () => {
                             placeholder="Цена до ..."
                             aria-label="Цена до ..."
                             type="text"
+                            value={priceEnd}
                         />
                         <Button
                             className="search-button"
