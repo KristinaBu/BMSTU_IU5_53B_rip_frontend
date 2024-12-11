@@ -1,12 +1,12 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 export interface AppData{
-    Cargo_name : string
-    price_filter : string
+    price_from : string
+    price_to : string
 }
 
 const initialState : AppData =  {
-    Cargo_name: "",
-    price_filter : '0'
+    price_from : "",
+    price_to : ""
 
 }
 
@@ -15,20 +15,20 @@ export const AppSlice = createSlice({
     initialState,
     reducers: {
         refreshApp: (state) =>{
-            state.Cargo_name = ""
-            state.price_filter = '0'
+            state.price_from = ""
+            state.price_to = ""
         },
-        setCargoName: (state, actioin : PayloadAction<string>)=> {
-            state.Cargo_name = actioin.payload
+        savePriceFrom: (state, actioin : PayloadAction<string>)=> {
+            state.price_from = actioin.payload
         },
-        setPriceFilter: (state, action: PayloadAction<string>) =>{
-            state.price_filter = (action.payload)
+        savePriceTo: (state, action: PayloadAction<string>) =>{
+            state.price_to = (action.payload)
         }
     }
 });
 
 export const {
     refreshApp,
-    setCargoName,
-    setPriceFilter,
+    savePriceFrom,
+    savePriceTo,
 } = AppSlice.actions;

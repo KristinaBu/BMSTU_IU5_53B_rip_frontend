@@ -1,8 +1,8 @@
 import { IRequestOptions } from "./typing";
 
 
-export const BASE_URL = "";
-/* export const BASE_URL = "http://localhost:8080"; */
+export const BASE_URL = "http://172.27.195.241:8080";
+
 
 export const sendRequest = async (options: IRequestOptions) => {
     const controller = new AbortController();

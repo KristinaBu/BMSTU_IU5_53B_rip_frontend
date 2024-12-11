@@ -5,24 +5,31 @@ import { ChangeEvent } from "../../App.typing.tsx";
 import {getDeliveryList} from "../../core/api/delivery";
 import {Delivery} from "../../core/api/delivery/typing.ts";
 import {DeliveryListMock} from "../../modules/mocks.ts";
+import {useSelector, useDispatch} from "../../core/store";
+import {selectApp} from "../../core/store/slices/selector.ts";
+import {savePriceFrom, savePriceTo} from "../../core/store/slices/appSlice.ts";
 
 export interface DeliveryCardProps {}
 
 export const useDeliveryPage = () => {
     // это states и функции для их изменения
     const [DeliveryList, setDeliveryList] = useState<Delivery[]>([]);
-    // строка для поиска по цене
-    const [priceStart, setPriceStart] = useState("");
-    const [priceEnd, setPriceEnd] = useState("");
 
-    // event handlers
+    // для поиска по цене
+    const { price_from: priceStart, price_to: priceEnd } = useSelector(selectApp);
+    //const [priceEnd, setPriceEnd] = useState("");
+    // dispatch для изменения состояния
+    const dispatch = useDispatch();
+
+
 
     const handlePriceStartChange = (e: ChangeEvent) => {
-        setPriceStart(e.target.value);
+
+        dispatch(savePriceFrom(e.target.value));
     }
 
     const handlePriceEndChange = (e: ChangeEvent) => {
-        setPriceEnd(e.target.value);
+        dispatch(savePriceTo(e.target.value));
     }
 
     // поиск доставки по цене - при нажатии на кнопку поиска
@@ -57,5 +64,7 @@ export const useDeliveryPage = () => {
         handleSearchDeliveryClick,
         handlePriceStartChange,
         handlePriceEndChange,
+        priceStart,
+        priceEnd,
     };
 };
