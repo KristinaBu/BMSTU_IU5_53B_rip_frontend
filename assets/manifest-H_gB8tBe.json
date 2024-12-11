@@ -1,9 +1,0 @@
-{
-  "name": "DeliVeryWell",
-  "short_name": "DeliVeryWell",
-  "start_url": "/BMSTU_IU5_53B_rip_frontend/",
-  "display": "standalone",
-  "background_color": "#fdfdfd",
-  "theme_color": "#8BD147",
-  "orientation": "portrait-primary"
-}
