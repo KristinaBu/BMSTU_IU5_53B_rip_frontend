@@ -24,5 +24,6 @@ export default defineConfig({
       },
     },
   },
-  plugins: [react()]
+  plugins: [react()],
+  base: "/BMSTU_IU5_53B_rip_frontend/",
 })
