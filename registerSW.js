@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/BMSTU_IU5_53B_rip_frontend/sw.js', { scope: '/BMSTU_IU5_53B_rip_frontend/' })})}
